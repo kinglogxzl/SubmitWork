@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>交作业平台</title>
+{#	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">#}
+{#	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>#}
+{#	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>#}
+{#    <link href="https://cdn.bootcss.com/bootstrap-fileinput/5.0.6/css/fileinput.min.css" rel="stylesheet">#}
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/css/fileinput.min.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>提交作业</h1>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;margin-bottom: 20px">
+            <div class="col-md-8">
+                <form role="form" action="/submit_file" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="inputfile">文件输入</label>
+                        <input type="file"  id="inputfile" name="input_data" class="file-loading f_upload" data-show-preview="false" data-show-upload="false"/>
+    {#                        <input type="file" id="inputfile" name="input_data">#}
+                    </div>
+                    <button type="submit" class="btn btn-info">提交</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+{#    <script src="https://cdn.bootcss.com/bootstrap-fileinput/5.0.6/js/fileinput.min.js"></script>#}
+{#    <script src="https://cdn.bootcss.com/bootstrap-fileinput/5.0.6/js/locales/zh.min.js"></script>#}
+    <script src="/static/js/fileinput.min.js"></script>
+    <script src="/static/js/zh.min.js"></script>
+    <script src="/static/js/entity.js"></script>
+</html>
